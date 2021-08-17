@@ -1,0 +1,35 @@
+{
+    "name": "orti/blogger",
+    "description": "A Blog Package for PHP",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "orhanurullah",
+            "email": "orhann.1512@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "illuminate/contracts": "8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "9.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orti\\Blogger\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Orti\\Blogger\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
