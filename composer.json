@@ -10,12 +10,12 @@
         }
     ],
     "require": {
-        "php": "^8.0",
-        "illuminate/contracts": "8.0"
+        "php": "^7.4|^8.0",
+        "illuminate/contracts": "^8.0"
     },
     "require-dev": {
         "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "9.5.8"
+        "phpunit/phpunit": "^9.3"
     },
     "autoload": {
         "psr-4": {
@@ -25,6 +25,16 @@
     "autoload-dev": {
         "psr-4": {
             "Orti\\Blogger\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Orti\\Blogger\\Providers\\PostServiceProvider"
+            ],
+            "aliases": {
+                "Post": "Orti\\Blogger\\Facades\\PostFacade"
+            }
         }
     },
     "config": {
